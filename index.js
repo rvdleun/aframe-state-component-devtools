@@ -2,6 +2,10 @@ const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__;
 
 AFRAME.registerSystem('state-devtools', {
     init: function() {
+        if (!reduxDevTools) {
+            return;
+        }
+
         this.onRenderStart = this.onRenderStart.bind(this);
         this.updateState = this.updateState.bind(this);
 
