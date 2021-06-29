@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/rvdleun/aframe-state-component-devtools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvdleun/aframe-state-component-devtools"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

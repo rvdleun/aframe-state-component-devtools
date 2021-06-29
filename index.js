@@ -3,6 +3,7 @@ const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__;
 AFRAME.registerSystem('state-devtools', {
     init: function() {
         if (!reduxDevTools) {
+            console.warn('aframe-state-component-devtools: Redux DevTools not found. Is the extension active?')
             return;
         }
 
